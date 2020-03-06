@@ -158,6 +158,60 @@ body.modal-open .wrapper {
   border-color: greenyellow;
   color: black;
 }
+.register {
+  background: -webkit-linear-gradient(left, black, gray);
+  margin-top: 3%;
+  padding: 3%;
+}
+.m-t-2 {
+  font-family: "Montserrat", sans-serif;
+  color: greenyellow;
+}
+.register-right {
+  background: #f8f9fa;
+  border-top-left-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+}
+.register .nav-tabs {
+  margin-top: 3%;
+  border: none;
+  background: greenyellow;
+  border-radius: 1.5rem;
+  width: 28%;
+  float: right;
+}
+.register .nav-tabs .nav-link {
+  padding: 2%;
+  height: 34px;
+  font-weight: 600;
+  color: black;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+.register .nav-tabs .nav-link:hover {
+  border: none;
+}
+.register .nav-tabs .nav-link.active {
+  width: 100px;
+  color: black;
+  border: 2px solid greenyellow;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+.img-r {
+  width: 10em;
+  height: 8em;
+  margin-bottom: 3em;
+}
+.h-reg {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 15%;
+  margin-bottom: -15%;
+}
+.register-form {
+  padding: 7em;
+  margin-top: 2em;
+}
 /* Registro */
 
 /* Noticias */

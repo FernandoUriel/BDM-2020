@@ -152,6 +152,8 @@ body.modal-open .wrapper {
 .btn-registrarse {
   background-color: greenyellow;
   color: black;
+  margin-top: 2em;
+  margin-left: 25em;
 }
 .btn-registrarse:hover {
   background-color: white;
@@ -199,18 +201,20 @@ body.modal-open .wrapper {
   border-bottom-left-radius: 1.5rem;
 }
 .img-r {
-  width: 10em;
+  margin-top: 5em;
+  width: 12em;
   height: 8em;
   margin-bottom: 3em;
 }
 .h-reg {
   font-family: "Montserrat", sans-serif;
   margin-top: 15%;
-  margin-bottom: -15%;
+  margin-bottom: -10%;
 }
 .register-form {
   padding: 7em;
   margin-top: 2em;
+  margin-bottom: 2em;
 }
 /* Registro */
 

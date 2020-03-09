@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,6 +26,52 @@
       href="/plugins/imgs/favicon.png"
     />
     <title>8 Bits</title>
+    <script>
+      $(document).ready(function() {
+        //alert("todo cargado");
+        $("#pass1,#pass2").on("keyup", function() {
+          if ($("#pass1").val() == $("#pass2").val()) {
+            $("#message")
+              .html("Las contraseñas coinciden")
+              .css("color", "green");
+            $("#btnReg").prop("disabled", false);
+          } else {
+            $("#message")
+              .html("Las contraseñas no Coinciden")
+              .css("color", "red");
+            $("#btnReg").prop("disabled", true);
+          }
+
+          if ($("#pass1").val() <= 0) {
+            $("#message")
+              .html("La contraseña no puede estar vacia")
+              .css("color", "red");
+            $("#btnReg").prop("disabled", true);
+          }
+        });
+
+        $("#pass3,#pass4").on("keyup", function() {
+          if ($("#pass3").val() == $("#pass4").val()) {
+            $("#message2")
+              .html("Las contraseñas coinciden")
+              .css("color", "green");
+            $("#btnReg2").prop("disabled", false);
+          } else {
+            $("#message2")
+              .html("Las contraseñas no Coinciden")
+              .css("color", "red");
+            $("#btnReg2").prop("disabled", true);
+          }
+
+          if ($("#pass3").val() <= 0) {
+            $("#message2")
+              .html("La contraseña no puede estar vacia")
+              .css("color", "red");
+            $("#btnReg2").prop("disabled", true);
+          }
+        });
+      });
+    </script>
   </head>
   <body>
     <!-- Modal LogIn -->
@@ -310,10 +356,26 @@
                           type="text"
                           placeholder="Contraseña"
                           name="contrasena-u"
+                          id="pass1"
                         />
                       </div>
                       <div class="form-group">
-                        <input type="text" placeholder="Confirmar contraseña" />
+                        <input
+                          type="text"
+                          placeholder="Confirmar contraseña"
+                          id="pass2"
+                        />
+                      </div>
+                      <div class="custom-file">
+                        <input
+                          type="file"
+                          class="custom-file-input"
+                          id="customFileLang"
+                          lang="es"
+                        />
+                        <label class="custom-file-label" for="customFileLang"
+                          >Seleccionar Archivo</label
+                        >
                       </div>
                     </div>
                     <!-- Inputs derechos -->
@@ -339,6 +401,9 @@
                           name="correo-u"
                         />
                       </div>
+                      <div class="form-group">
+                        <span id="message"></span>
+                      </div>
                     </div>
 
                     <div class="row">
@@ -346,6 +411,7 @@
                         type="submit"
                         class="btn btn-registrarse"
                         value="Registrarse"
+                        id="btnReg"
                       />
                     </div>
                   </div>
@@ -382,10 +448,26 @@
                           type="text"
                           placeholder="Contraseña"
                           name="contrasena-u"
+                          id="pass3"
                         />
                       </div>
                       <div class="form-group">
-                        <input type="text" placeholder="Confirmar contraseña" />
+                        <input
+                          type="text"
+                          placeholder="Confirmar contraseña"
+                          id="pass4"
+                        />
+                      </div>
+                      <div class="custom-file">
+                        <input
+                          type="file"
+                          class="custom-file-input"
+                          id="customFileLang"
+                          lang="es"
+                        />
+                        <label class="custom-file-label" for="customFileLang"
+                          >Seleccionar Archivo</label
+                        >
                       </div>
                     </div>
                     <!-- inputs derechos -->
@@ -410,6 +492,9 @@
                           placeholder="Correo"
                           name="correo-u"
                         />
+                        <div class="form-group">
+                          <span id="message2"></span>
+                        </div>
                       </div>
                     </div>
                     <div class="row">

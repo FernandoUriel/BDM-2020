@@ -266,3 +266,9 @@ body.modal-open .wrapper {
   object-fit: cover;
 }
 /* Editar Noticia Fin */
+/* Nav-bar Hamburger */
+.custom-toggler {
+  background-color: greenyellow;
+  color: greenyellow;
+}
+/* Nav-bar Hamburger Fin */

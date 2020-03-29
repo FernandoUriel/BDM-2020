@@ -221,6 +221,7 @@
         </ul>
       </nav>
       <!-- Navbar Fin -->
+
       <!-- Modal LogIn -->
       <!-- Modal -->
       <div
@@ -341,32 +342,63 @@
                         <input
                           type="text"
                           placeholder="Nombre/s"
-                          name="nombre-u"
+                          name="nombre-r"
                         />
                       </div>
                       <div class="form-group">
                         <input
                           type="text"
-                          placeholder="Nombre de usuario"
-                          name="username-u"
+                          placeholder="Apellido Paterno"
+                          name="apePaterno-"
                         />
                       </div>
                       <div class="form-group">
                         <input
                           type="text"
+                          placeholder="Apellido Materno"
+                          name="apeMaterno-"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="password"
                           placeholder="Contraseña"
-                          name="contrasena-u"
+                          name="contra-r"
                           id="pass1"
                         />
                       </div>
                       <div class="form-group">
                         <input
-                          type="text"
-                          placeholder="Confirmar contraseña"
+                          type="password"
+                          placeholder="Confirmar Contraseña"
                           id="pass2"
                         />
                       </div>
-                      <div class="custom-file">
+                    </div>
+                    <!-- Inputs derechos -->
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          placeholder="Nick name"
+                          name="nickname-r"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          placeholder="Telefono(opcional)"
+                          name="telefono-r"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          placeholder="Correo"
+                          name="correo-r"
+                        />
+                      </div>
+                      <div class="custom-file  form-control-sm">
                         <input
                           type="file"
                           class="custom-file-input"
@@ -377,32 +409,8 @@
                           >Seleccionar Archivo</label
                         >
                       </div>
-                    </div>
-                    <!-- Inputs derechos -->
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          placeholder="Apellidos"
-                          name="apellido-u"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          placeholder="Telefono(opcional)"
-                          name="telefono-u"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          placeholder="Correo"
-                          name="correo-u"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <span id="message"></span>
+                      <div class="form-group align-items-center">
+                        <span class="align-bottom" id="message"></span>
                       </div>
                     </div>
 
@@ -438,14 +446,20 @@
                       <div class="form-group">
                         <input
                           type="text"
-                          placeholder="Nombre de usuario"
-                          name="username-u"
+                          placeholder="Apellido Paterno"
+                          name="apePaterno-u"
                         />
                       </div>
-
                       <div class="form-group">
                         <input
                           type="text"
+                          placeholder="Apellido Materno"
+                          name="apeMaterno-u"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="password"
                           placeholder="Contraseña"
                           name="contrasena-u"
                           id="pass3"
@@ -453,21 +467,10 @@
                       </div>
                       <div class="form-group">
                         <input
-                          type="text"
+                          type="password"
                           placeholder="Confirmar contraseña"
                           id="pass4"
                         />
-                      </div>
-                      <div class="custom-file">
-                        <input
-                          type="file"
-                          class="custom-file-input"
-                          id="customFileLang"
-                          lang="es"
-                        />
-                        <label class="custom-file-label" for="customFileLang"
-                          >Seleccionar Archivo</label
-                        >
                       </div>
                     </div>
                     <!-- inputs derechos -->
@@ -475,8 +478,8 @@
                       <div class="form-group">
                         <input
                           type="text"
-                          placeholder="Apellidos"
-                          name="apellido-u"
+                          placeholder="Nick name"
+                          name="nickname-u"
                         />
                       </div>
                       <div class="form-group">
@@ -492,9 +495,20 @@
                           placeholder="Correo"
                           name="correo-u"
                         />
-                        <div class="form-group">
-                          <span id="message2"></span>
-                        </div>
+                      </div>
+                      <div class="custom-file form-control-sm">
+                        <input
+                          type="file"
+                          class="custom-file-input"
+                          id="customFileLang"
+                          lang="es"
+                        />
+                        <label class="custom-file-label" for="customFileLang"
+                          >Seleccionar Archivo</label
+                        >
+                      </div>
+                      <div class="form-group">
+                        <span id="message2"></span>
                       </div>
                     </div>
                     <div class="row">

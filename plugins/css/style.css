@@ -257,6 +257,10 @@ body.modal-open .wrapper {
 .fl-lbl {
   padding-left: 10em;
 }
+
+.space-b {
+  padding: 0.7em;
+}
 /* Publicar Noticia Fin  */
 
 /* Editar Noticia */
@@ -272,3 +276,9 @@ body.modal-open .wrapper {
   color: greenyellow;
 }
 /* Nav-bar Hamburger Fin */
+
+/* Perfil */
+.p-black {
+  background-color: black;
+}
+/* Fin perfil */

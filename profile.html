@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="height=device-height, width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, viewport-fit=cover"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap"
@@ -20,23 +24,12 @@
     <link href="/plugins/css/all.css" rel="stylesheet" />
     <script type="text/javascript" src="/plugins/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script
-      type="text/javascript"
-      src="plugin/js/bootstrap-datepicker.js"
-    ></script>
     <link
       rel="shortchut icon"
       type="image/png"
       href="/plugins/imgs/favicon.png"
     />
-    <script type="text/javascript">
-      $(function() {
-        $(".dates #user1").datepicker({
-          format: "yyyy-mm-dd",
-          autoclose: "true"
-        });
-      });
-    </script>
+
     <title>8 Bits</title>
   </head>
   <body>
@@ -104,14 +97,14 @@
       </div>
     </div>
     <!-- Modal LogIn Fin -->
-
     <div class="wrapper">
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-default">
         <a href="index.html"
           ><img id="img-logo" src="/plugins/imgs/Logo.png" alt="8bits logo"
         /></a>
         <a href="index.html" class="navbar-brand nav-let">Home</a>
+
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
             <a
@@ -163,6 +156,7 @@
               class="navbar-brand nav-let"
               data-toggle="modal"
               data-target="#exampleModal"
+              id="btn-l"
               ><i class="fas fa-user"></i> LogIn</a
             >
           </li>
@@ -188,185 +182,14 @@
       </nav>
       <!-- Navbar Fin -->
 
-      <!-- Escribir noticia -->
-      <div class="container container2">
-        <div class="col-lg-12">
-          <div class="row">
-            <h2>Escribir noticia</h2>
-          </div>
-          <form action="">
-            <div class="form-row">
-              <h4 class="text-secondary">Ubicación</h4>
-            </div>
-            <div class="form-group form-row">
-              <input
-                type="text"
-                class="col-10"
-                placeholder="Colonia"
-                name="colonia-n"
-                required
-              />
-            </div>
-            <div class="form-group form-row">
-              <input
-                type="text"
-                class="col-10"
-                placeholder="Ciudad"
-                name="ciudad-n"
-                required
-              />
-            </div>
-            <div class="form-group form-row">
-              <input
-                type="text"
-                class="col-10"
-                placeholder="Pais"
-                name="pais-n"
-                required
-              />
-            </div>
-            <div class="form-row">
-              <h4 class="text-secondary">Fecha</h4>
-            </div>
-            <div class="form-group form-row">
-              <input
-                type="text"
-                class="col-6"
-                placeholder="Hora de acontecimiento formato: 24hrs"
-                name="hora-n"
-                required
-              />
-            </div>
-            <div class="form-group form-row">
-              <input
-                type="text"
-                class="col-6"
-                placeholder="Fecha de acontecimiento formato: yyyy-mm-dd"
-                name="fecha-n"
-                required
-              />
-            </div>
-            <div class="form-row">
-              <h4 class="text-secondary">Noticia</h4>
-            </div>
-            <div class="form-group form-row">
-              <input
-                type="text"
-                class="col-10"
-                placeholder="Titulo"
-                name="titulo-n"
-              />
-            </div>
-            <div class="form-group form-row">
-              <input
-                type="text"
-                class="col-10"
-                placeholder="Descripcion"
-                name="descripcion-n"
-                required
-              />
-            </div>
-            <div class="form-group form-row">
-              <textarea name="" id="" cols="82" rows="10" required></textarea>
-            </div>
-            <div class="form-group form-row">
-              <input
-                type="text"
-                class="col-10"
-                name="noticia-n"
-                id=""
-                placeholder="Palabras claves, debe ser separado por espacios"
-                required
-              />
-            </div>
-            <div class="form-row">
-              <h6 class="text-secondary">¿Es tu noticia urgente?</h6>
-            </div>
-            <div class="form-check form-row">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="siRadio"
-                id="siRadio"
-                value="option1"
-                checked
-              />
-              <label class="form-check-label" for="siRadio">
-                Si
-              </label>
-            </div>
-            <div class="form-check form-row">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="noRadio"
-                id="noRadio"
-                value="option2"
-              />
-              <label class="form-check-label" for="noRadio">
-                No
-              </label>
-            </div>
-            <div class="form-row space-b"></div>
-            <div class="form-row">
-              <h6 class="text-secondary">Añade imagenes a la noticia</h6>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlFile1" class="text-secondary"
-                >Imagen 1</label
-              >
-              <input
-                type="file"
-                class="form-control-file"
-                id="exampleFormControlFile1"
-                name="img1-n"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlFile2" class="text-secondary"
-                >Imagen 2(opcional)</label
-              >
-              <input
-                type="file"
-                class="form-control-file"
-                name="img2-n"
-                id="exampleFormControlFile2"
-              />
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlFile3" class="text-secondary"
-                >Imagen 3(opcional)</label
-              >
-              <input
-                type="file"
-                class="form-control-file"
-                name="img3-n"
-                id="exampleFormControlFile3"
-              />
-            </div>
-            <div class="form-row space-b"></div>
-            <div class="form-row">
-              <h6 class="text-secondary">Añade un video(opcional)</h6>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlFile3" class="text-secondary"
-                >Video(opcional)</label
-              >
-              <input
-                type="file"
-                class="form-control-file"
-                name="vid-n"
-                id="exampleFormControlFile3"
-              />
-            </div>
-            <div class="form-row">
-              <input type="submit" value="Subir noticia" class="btn btn-Log" />
-            </div>
-          </form>
+      <!--Perfil -->
+      <div class="row container2">
+        <div class="col-lg-3 p-black rounded">
+          <img src="/plugins/imgs/avatar.png" alt="" />
+          <label for=""></label>
         </div>
       </div>
-      <!-- Fin Escribir noticia -->
+      <!-- Perfil Fin -->
 
       <!-- Footer -->
       <footer class="page-footer font-small pt-4" id="contactar">

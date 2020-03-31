@@ -281,4 +281,72 @@ body.modal-open .wrapper {
 .p-black {
   background-color: black;
 }
+.img-p {
+  width: 10em;
+  height: 10em;
+  object-fit: cover;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
 /* Fin perfil */
+
+/* Admin  */
+.ad-PP {
+  margin-top: 3em;
+  height: 15em;
+  width: 15em;
+  border-radius: 50%;
+}
+.sideMenu {
+  background-color: black;
+
+  border-bottom: 0.15em solid greenyellow;
+}
+.dash-item,
+.dash-item2 {
+  padding: 1em;
+}
+.dash-item:hover {
+  background-color: rgb(37, 35, 35);
+}
+.dash-item2:hover {
+  border: none;
+}
+.dash-text {
+  padding-left: 1em;
+  font-size: 1.5em;
+  color: greenyellow;
+  border: none;
+}
+.dash-text2 {
+  font-size: 1.5em;
+  color: greenyellow;
+  padding-left: 1em;
+  border: none;
+}
+.dash-text2:hover {
+  color: greenyellow;
+}
+.dash-text:hover {
+  color: white;
+}
+.content {
+  background-color: white;
+}
+/* Aprobar */
+.c-admin {
+  margin: 5em;
+  padding: 3em;
+  width: 25em;
+}
+.img-r-acc {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 15em;
+  width: 15em;
+}
+.tab-content1 {
+  overflow-y: scroll;
+}
+/* Aprobar Fin */
+/* Admin Fin */

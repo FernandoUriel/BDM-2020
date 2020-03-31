@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="height=device-height, width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, viewport-fit=cover"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap"
@@ -16,7 +20,7 @@
       src="/plugins/js/jquery-3.4.1.min.js"
     ></script>
     <link rel="stylesheet" href="/plugins/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/plugins/css/style.css" />
+
     <link href="/plugins/css/all.css" rel="stylesheet" />
     <script type="text/javascript" src="/plugins/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
@@ -25,6 +29,7 @@
       type="image/png"
       href="/plugins/imgs/favicon.png"
     />
+    <link rel="stylesheet" href="/plugins/css/style.css" />
     <title>8 Bits</title>
   </head>
   <body>
@@ -94,11 +99,12 @@
     <!-- Modal LogIn Fin -->
     <div class="wrapper">
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg sticky-top">
+      <nav class="navbar navbar-expand-lg sticky-top navbar-default">
         <a href="index.html"
           ><img id="img-logo" src="/plugins/imgs/Logo.png" alt="8bits logo"
         /></a>
         <a href="index.html" class="navbar-brand nav-let">Home</a>
+
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
             <a
@@ -150,6 +156,7 @@
               class="navbar-brand nav-let"
               data-toggle="modal"
               data-target="#exampleModal"
+              id="btn-l"
               ><i class="fas fa-user"></i> LogIn</a
             >
           </li>
@@ -175,78 +182,169 @@
       </nav>
       <!-- Navbar Fin -->
 
-      <!-- Noticias -->
-      <div class="container">
-        <h2 class="h2-l">Nombre Categoria</h2>
-        <div class="media border border-dark">
-          <img src="/plugins/imgs/Noticias.jpg" class="m-3 img-c" alt="..." />
-          <div class="media-body">
-            <a href="noticia.html"><h5 class="card-title">Titulo</h5></a>
-            <a href="#"><h5 class="m-t">categoria</h5></a>
-            <p>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-              scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-              vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-              nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </p>
+      <!-- Admin menu -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="sideMenu col-sm-3 col-md-2">
+            <div class="nav flex-column nav-tabs" aria-orientation="vertical">
+              <img src="plugins/imgs/Admin.png" alt="" class="ad-PP" />
+              <p class="dash-text2 dash-item2">Administrador</p>
+              <a
+                href="#aprobar"
+                id="aprobar-tab"
+                class="nav-link active dash-text dash-item"
+                data-toggle="tab"
+                aria-controls="aprobar"
+                aria-selected="true"
+                role="tab"
+                ><i class="fas fa-user-check"></i> Aprobar</a
+              >
+              <a
+                href="#reporteros"
+                id="reporteros-tab"
+                class="nav-link dash-text dash-item"
+                data-toggle="tab"
+                aria-controls="reporteros"
+                aria-selected="false"
+                role="tab"
+                ><i class="fas fa-camera-retro"></i> Reporteros</a
+              >
+              <a
+                href="#secciones"
+                id="secciones-tab"
+                class="nav-link dash-text dash-item"
+                data-toggle="tab"
+                aria-controls="secciones"
+                aria-selected="false"
+                role="tab"
+                ><i class="fas fa-list-alt"></i> Secciones</a
+              >
+              <a
+                href="#noticias"
+                id="noticias-tab"
+                class="nav-link dash-text dash-item"
+                data-toggle="tab"
+                aria-controls="noticias"
+                aria-selected="false"
+                role="tab"
+                ><i class="fas fa-newspaper"></i> Noticias</a
+              >
+              <a
+                href="#orden"
+                id="orden-tab"
+                class="nav-link dash-text dash-item"
+                data-toggle="tab"
+                aria-controls="orden"
+                aria-selected="false"
+                role="tab"
+                ><i class="fas fa-sort-amount-down-alt"></i> Orden</a
+              >
+            </div>
           </div>
-        </div>
 
-        <div class="media border border-dark">
-          <img src="/plugins/imgs/Noticias.jpg" class="m-3 img-c" alt="..." />
-          <div class="media-body">
-            <a href="noticia.html"><h5 class="card-title">Titulo</h5></a>
-            <a href="#"><h5 class="m-t">categoria</h5></a>
-            <p>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-              scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-              vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-              nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </p>
-          </div>
-        </div>
+          <div class="col-9">
+            <div class="tab-content col-12" id="MytabContent">
+              <div
+                class="tab-pane fade show active"
+                id="aprobar"
+                role="tabpanel"
+                aria-labelledby="aprobar-tab"
+              >
+                <div class="d-flex ml-5">
+                  <div class="col-4 m-4">
+                    <div class="card">
+                      <div class="card-body text-center">
+                        <img
+                          src="plugins/imgs/reportera.jpg"
+                          class="img-r-acc"
+                          alt=""
+                        />
+                        <p>Nick name</p>
+                        <p>Nombre de usuario</p>
+                        <p>Apellido paterno</p>
+                        <p>Apellido Materno</p>
+                        <p>correo_numero@gmail.com</p>
+                        <p>Telefono: 0123 456 789</p>
+                        <button class="btn btn-success">Aceptar</button>
+                        <button class="btn btn-danger">Declinar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 m-4">
+                    <div class="card">
+                      <div class="card-body text-center">
+                        <img
+                          src="plugins/imgs/reportera.jpg"
+                          class="img-r-acc"
+                          alt=""
+                        />
+                        <p>Nick name</p>
+                        <p>Nombre de usuario</p>
+                        <p>Apellido paterno</p>
+                        <p>Apellido Materno</p>
+                        <p>correo_numero@gmail.com</p>
+                        <p>Telefono: 0123 456 789</p>
+                        <button class="btn btn-success">Aceptar</button>
+                        <button class="btn btn-danger">Declinar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-        <div class="media border border-dark">
-          <img src="/plugins/imgs/Noticias.jpg" class="m-3 img-c" alt="..." />
-          <div class="media-body">
-            <a href="noticia.html"><h5 class="card-title">Titulo</h5></a>
-            <a href="#"><h5 class="m-t">categoria</h5></a>
-            <p>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-              scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-              vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-              nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </p>
-          </div>
-        </div>
-
-        <div class="media border border-dark">
-          <img src="/plugins/imgs/Noticias.jpg" class="m-3 img-c" alt="..." />
-          <div class="media-body">
-            <a href="noticia.html"><h5 class="card-title">Titulo</h5></a>
-            <a href="#"><h5 class="m-t">categoria</h5></a>
-            <p>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-              scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-              vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-              nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-            </p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </p>
+                <div class="d-flex ml-5">
+                  <div class="col-4 m-4">
+                    <div class="card">
+                      <div class="card-body text-center">
+                        <img
+                          src="plugins/imgs/reportera.jpg"
+                          class="img-r-acc"
+                          alt=""
+                        />
+                        <p>Nick name</p>
+                        <p>Nombre de usuario</p>
+                        <p>Apellido paterno</p>
+                        <p>Apellido Materno</p>
+                        <p>correo_numero@gmail.com</p>
+                        <p>Telefono: 0123 456 789</p>
+                        <button class="btn btn-success">Aceptar</button>
+                        <button class="btn btn-danger">Declinar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 m-4">
+                    <div class="card">
+                      <div class="card-body text-center">
+                        <img
+                          src="plugins/imgs/reportera.jpg"
+                          class="img-r-acc"
+                          alt=""
+                        />
+                        <p>Nick name</p>
+                        <p>Nombre de usuario</p>
+                        <p>Apellido paterno</p>
+                        <p>Apellido Materno</p>
+                        <p>correo_numero@gmail.com</p>
+                        <p>Telefono: 0123 456 789</p>
+                        <button class="btn btn-success">Aceptar</button>
+                        <button class="btn btn-danger">Declinar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="reporteros"
+                role="tabpanel"
+                aria-labelledby="reporteros-tab"
+              >
+                ...2
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Noticias Fin -->
+      <!-- Fin admin menu -->
 
       <!-- Footer -->
       <footer class="page-footer font-small pt-4" id="contactar">

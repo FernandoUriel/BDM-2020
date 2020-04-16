@@ -349,4 +349,28 @@ body.modal-open .wrapper {
   overflow-y: scroll;
 }
 /* Aprobar Fin */
+
+/* Lista Reportero */
+.img-r-l {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+}
+/* Lista Reportero Fin */
+
+.seccion-d {
+  background-color: black;
+  align-content: center;
+  margin-left: 33em;
+  margin-right: 33em;
+}
+
+.i-admin {
+  align-content: center;
+}
+
+/* Color seccion */
+
+/* Fin color seccion */
 /* Admin Fin */

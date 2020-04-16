@@ -91,15 +91,12 @@ body.modal-open .wrapper {
   background-size: cover;
 }
 
-/* #c-item-1 {
-  background-image: url("/plugins/imgs/C-Royale.jpg");
+.c-item-1 {
+  object-fit: cover;
+  width: 1920px;
+  height: 1080px;
 }
-#c-item-2 {
-  background-image: url("/plugins/imgs/League.jpg");
-}
-#c-item-3 {
-  background-image: url("/plugins/imgs/smash-ultimate.png");
-} */
+
 /* Carrusel Fin */
 
 /* Footer */

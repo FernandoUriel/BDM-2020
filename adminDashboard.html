@@ -576,11 +576,186 @@
 
               <div
                 class="tab-pane fade"
-                id="secciones"
+                id="noticias"
                 role="tabpanel"
                 aria-labelledby="secciones-tab"
               >
-                ...3
+                <h3 class="text-center mt-4 mb-4">Aprobar noticias</h3>
+                <td class="d-flex mt-5">
+                  <table class="table">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">Titulo</th>
+                        <th scope="col">Reportero</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Seccion</th>
+                        <th scope="col">Ir a noticia</th>
+                        <th>Aprobar</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Titulo de la noticia</th>
+                        <td>Nombre Apellido</td>
+                        <td>20-05-2020</td>
+                        <td>Nombre seccion</td>
+                        <td>
+                          <a href="noticia.html" target="_blank"
+                            >Ir a noticia</a
+                          >
+                        </td>
+                        <td class="d-none" name="id-del">id</td>
+                        <td>
+                          <a href="" class="btn btn-success"
+                            ><i class="fas fa-check-circle"></i
+                          ></a>
+                          <a href="" class="btn btn-danger"
+                            ><i class="fas fa-times-circle"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Titulo de la noticia</th>
+                        <td>Nombre Apellido</td>
+                        <td>20-05-2020</td>
+                        <td>Nombre seccion</td>
+                        <td>
+                          <a href="noticia.html" target="_blank"
+                            >Ir a noticia</a
+                          >
+                        </td>
+                        <td class="d-none" name="id-del">id</td>
+                        <td>
+                          <a href="" class="btn btn-success"
+                            ><i class="fas fa-check-circle"></i
+                          ></a>
+                          <a href="" class="btn btn-danger"
+                            ><i class="fas fa-times-circle"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Titulo de la noticia</th>
+                        <td>Nombre Apellido</td>
+                        <td>20-05-2020</td>
+                        <td>Nombre seccion</td>
+                        <td>
+                          <a href="noticia.html" target="_blank"
+                            >Ir a noticia</a
+                          >
+                        </td>
+                        <td class="d-none" name="id-del">id</td>
+                        <td>
+                          <a href="" class="btn btn-success"
+                            ><i class="fas fa-check-circle"></i
+                          ></a>
+                          <a href="" class="btn btn-danger"
+                            ><i class="fas fa-times-circle"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Titulo de la noticia</th>
+                        <td>Nombre Apellido</td>
+                        <td>20-05-2020</td>
+                        <td>Nombre seccion</td>
+                        <td>
+                          <a href="noticia.html" target="_blank"
+                            >Ir a noticia</a
+                          >
+                        </td>
+                        <td class="d-none" name="id-del">id</td>
+                        <td>
+                          <a href="" class="btn btn-success"
+                            ><i class="fas fa-check-circle"></i
+                          ></a>
+                          <a href="" class="btn btn-danger"
+                            ><i class="fas fa-times-circle"></i
+                          ></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="orden"
+                role="tabpanel"
+                aria-labelledby="secciones-tab"
+              >
+                <h3 class="text-center mt-4 mb-4">Ordenar Secciones</h3>
+                <div class="container">
+                  <form action="">
+                    <div class="form-check mb-4">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="ordenSecciones"
+                        id="opcionOrden1"
+                        checked
+                        value="ordenSec1"
+                      />
+                      <label class="form-check-label" for="opcionOrden1"
+                        >Orden Alfabetico</label
+                      >
+                    </div>
+                    <div class="form-check mb-4">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="ordenSecciones"
+                        id="opcionOrden2"
+                        value="ordenSec2"
+                      />
+                      <label class="form-check-label" for="opcionOrden2"
+                        >Orden por reciente</label
+                      >
+                    </div>
+                    <div class="form-check mb-4">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="ordenSecciones"
+                        id="opcionOrden3"
+                        value="ordenSec3"
+                      />
+                      <label class="form-check-label" for="opcionOrden3"
+                        >Orden alfabetico por color</label
+                      >
+                    </div>
+                    <div class="form-check mb-4">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="ordenSecciones"
+                        id="opcionOrden4"
+                        value="ordenSec4"
+                      />
+                      <label class="form-check-labe4" for="opcionOrden4"
+                        >Orden Alfabetico inverso</label
+                      >
+                    </div>
+
+                    <div class="form-check mb-4">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="ordenSecciones"
+                        id="opcionOrden5"
+                        value="ordenSec5"
+                      />
+                      <label class="form-check-label" for="opcionOrden5"
+                        >Orden alfabetico por color inverso</label
+                      >
+                    </div>
+                    <input
+                      class="btn btn-success"
+                      type="submit"
+                      value="Ordenar"
+                    />
+                  </form>
+                </div>
               </div>
             </div>
           </div>

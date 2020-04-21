@@ -321,6 +321,12 @@ body.modal-open .wrapper {
   padding-left: 1em;
   border: none;
 }
+.dash-text3 {
+  font-size: 1.2em;
+  color: greenyellow;
+  padding-left: 1em;
+  border: none;
+}
 .dash-text2:hover {
   color: greenyellow;
 }
